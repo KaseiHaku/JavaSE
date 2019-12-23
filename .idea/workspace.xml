@@ -1,261 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aac430b-7de6-49e7-9d45-e0a61c0076e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/JarsLocation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/DifficultPoint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DifficultPoint.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/Foundation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Foundation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/Induction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Induction.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/UsefulURL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsefulURL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/DesignPattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/DesignPattern.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/ObserverPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/ObserverPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/StatePattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/StatePattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/StrategyPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/StrategyPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/VisitorPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/VisitorPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/command/BuyStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/command/BuyStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/command/Executer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/command/Executer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/command/SellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/command/SellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/command/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/command/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/filter/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/filter/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/filter/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/filter/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/filter/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/interpreter/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/interpreter/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/iterator/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/iterator/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/iterator/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/iterator/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/iterator/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/iterator/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/iterator/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/iterator/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/mediator/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/mediator/ChatRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/mediator/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/mediator/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/mediator/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/mediator/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/memento/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/memento/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/memento/Memo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/memento/Memo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/memento/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/memento/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/memento/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/template/BasketballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/template/BasketballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/template/FootballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/template/FootballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/behavior/template/GameTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/behavior/template/GameTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/SingletonPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/SingletonPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/builder/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/builder/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/builder/BoxBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/builder/BoxBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/ColorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/ColorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/FactoryProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/FactoryProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Green.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Red.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/factory_abstract/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/factory_abstract/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/prototype/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/prototype/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/establish/prototype/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/establish/prototype/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/AdapterPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/AdapterPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/ProxyPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/ProxyPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/bridge/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/bridge/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/bridge/DrawAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/bridge/DrawAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/bridge/DrawGreenCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/bridge/DrawGreenCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/bridge/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/bridge/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/bridge/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/bridge/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/chain/F13_01Integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/chain/F13_01Integer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/chain/F13_02Boolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/chain/F13_02Boolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/chain/F13_03String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/chain/F13_03String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/chain/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/chain/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/decorator/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/decorator/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/decorator/RedShapeDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/decorator/RedShapeDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/decorator/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/decorator/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/decorator/ShapeDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/decorator/ShapeDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/decorator/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/decorator/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/facade/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/facade/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/facade/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/facade/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/facade/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/facade/C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/facade/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/facade/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/facade/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/facade/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/flyweight/F11_01Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/flyweight/F11_01Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/flyweight/F11_02CircleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/flyweight/F11_02CircleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/flyweight/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/flyweight/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/nullobj/NullPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/nullobj/NullPeople.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/structure/nullobj/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/structure/nullobj/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/template/InterfaceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/template/InterfaceLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/template/detail/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/template/detail/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/design_pattern/template/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/design_pattern/template/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_compile/DynamicCompile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_compile/DynamicCompile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_compile/DynamicCompile2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_compile/DynamicCompile2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_compile/DynamicCompileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_compile/DynamicCompileDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_proxy/cglib/Entruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_proxy/cglib/Entruster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_proxy/cglib/KaseiMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_proxy/cglib/KaseiMethodInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/dynamic_proxy/jdk/JdkDynamicProxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/dynamic_proxy/jdk/JdkDynamicProxyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frame/KaseiClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frame/KaseiClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frame/KaseiDynamicCompile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frame/KaseiDynamicCompile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/date/CalendarDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/date/CalendarDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/ByteStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/ByteStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/ChangeStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/ChangeStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/CharStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/CharStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/DealStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/DealStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/MergeStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/MergeStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/ZipStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/ZipStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/file/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/file/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/keyboard/KeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/keyboard/KeyboardInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/io/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/io/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/jdbc/Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/jdbc/Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/jdbc/JdbcBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/jdbc/JdbcBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/jdbc/JdbcConnectionCloser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/jdbc/JdbcConnectionCloser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/jdbc/OracleJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/jdbc/OracleJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/K01Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/K01Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/K02IP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/K02IP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/K03Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/K03Port.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/K04URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/K04URL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/http/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/http/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/http/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/http/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/tcp/TcpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/tcp/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/tcp/TcpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/udp/UdpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/udp/UdpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/udp/UdpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/udp/UdpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/net/udp/summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/net/udp/summary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/nio/NioDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/nio/NioDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/reflect/F01Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/reflect/F01Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/reflect/F02Ksf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/reflect/F02Ksf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/reflect/F03TestGetClassObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/reflect/F03TestGetClassObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/reflect/F04DynamicCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/reflect/F04DynamicCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/reflect/Foundation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/reflect/Foundation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/regexp/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/regexp/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/serialize/MyExternalizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/serialize/MyExternalizable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/serialize/MySerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/serialize/MySerializable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/serialize/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/serialize/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/stream/OptionalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/stream/OptionalDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/stream/StreamOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/stream/StreamOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/frequently_used/string/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/frequently_used/string/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/ClassLoaderIntroduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/ClassLoaderIntroduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/GC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/GC.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K01Jvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K01Jvm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K04MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K04MyClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K05FileSystemClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K05FileSystemClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K06ContextLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K06ContextLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K07Tomcat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K07Tomcat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/K08OSGI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/K08OSGI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/MemoryStructure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/MemoryStructure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/architecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/architecture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/classloader/CustomClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/classloader/CustomClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/classloader/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/classloader/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/jvm/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/jvm/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/AbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/AbstractClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/Annotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/Annotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/Enumeration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/Enumeration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/FinalClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/FinalClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/InnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/InnerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/InnerClassAnonymous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/InnerClassAnonymous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/InnerClassDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/InnerClassDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/InnerClassStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/InnerClassStatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/NormalClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/NormalClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/other/InterfaceA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/other/InterfaceA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/other/InterfaceB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/other/InterfaceB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classes/other/InterfaceC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classes/other/InterfaceC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classinit/ClassInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classinit/ClassInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/classinit/ClassInit2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/classinit/ClassInit2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/container/EqualsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/container/EqualsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/container/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/container/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/generic/GenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/generic/GenericClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/generic/GenericMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/generic/GenericMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/generic/K10_03GenericInherit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/generic/K10_03GenericInherit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/generic/K10_04GenericNest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/generic/K10_04GenericNest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/generic/K10_05BoundedGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/generic/K10_05BoundedGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/InnerClassInherit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/InnerClassInherit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/K08C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/K08C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/K08Haku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/K08Haku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/K08Miku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/K08Miku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/K08Vocaloid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/K08Vocaloid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/other/K08A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/other/K08A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/other/K08B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/other/K08B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/override/Children.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/override/Children.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/override/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/override/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/override/polymorphic/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/override/polymorphic/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/override/polymorphic/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/override/polymorphic/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/inherit/override/polymorphic/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/inherit/override/polymorphic/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/object_oriented/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/object_oriented/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/array/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/array/ArrayKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/array/ArrayKit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/cast/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/cast/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/cast/Father.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/cast/Father.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/ConstructorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/ConstructorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/ExceptionTrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/ExceptionTrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/ExceptionUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/ExceptionUsage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/MethodException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/MethodException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/exception/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/exception/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/field/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/field/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/flowcontrol/FlowControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/flowcontrol/FlowControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/FinalFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/FinalFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/GenericMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/GenericMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/OverloadFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/OverloadFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/StaticFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/StaticFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/SynchronizeFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/SynchronizeFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/function/VarArgsFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/function/VarArgsFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/lambdaexpression/LambdaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/lambdaexpression/LambdaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/lambdaexpression/LambdaExpressionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/lambdaexpression/LambdaExpressionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/lambdaexpression/LambdaExpressionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/lambdaexpression/LambdaExpressionInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/lambdaexpression/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/lambdaexpression/MethodReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/syntax/operator/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/syntax/operator/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/ThreadCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/ThreadCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/ThreadExceptionDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/ThreadExceptionDeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/ThreadInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/ThreadInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/ThreadIsolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/ThreadIsolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/ThreadOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/ThreadOperate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo1/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo1/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo2/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo2/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo3/ConsumerMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo3/ConsumerMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo3/KaoYa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo3/KaoYa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo3/MultipleProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo3/MultipleProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo3/ProducerMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo3/ProducerMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/demo3/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/demo3/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/correspond/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/correspond/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/Synchronized6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/Synchronized6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/lock/LockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/lock/LockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/situation/Situation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/situation/Situation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/situation/Situation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/situation/Situation1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/thread/synchronize/situation/Situation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/thread/synchronize/situation/Situation2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/Base62Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/Base62Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/BigDecimalUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/BigDecimalUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/ExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/ExportUtil/Sql2Excel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/ExportUtil/Sql2Excel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/FileSystemUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/FileSystemUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/GsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/GsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/InfoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/InfoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/MailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/MailUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/SqlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/SqlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/StreamUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/StreamUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/TemplateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/TemplateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/TypeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/TypeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/WorkCalendarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/WorkCalendarUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/datatable/DataTableRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/datatable/DataTableRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/datatable/DataTableResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/datatable/DataTableResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/datatable/DataTableWrapUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/datatable/DataTableWrapUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kasei/java/utility/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/java/utility/package-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="3aac430b-7de6-49e7-9d45-e0a61c0076e9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="801" />
     <option name="y" value="128" />
     <option name="width" value="952" />
@@ -433,28 +179,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577123620214</updated>
-      <workItem from="1577123621485" duration="2202000" />
+      <workItem from="1577123621485" duration="2728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2202000" />
+    <option name="totallyTimeSpent" value="2728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32963374" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32963374" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
