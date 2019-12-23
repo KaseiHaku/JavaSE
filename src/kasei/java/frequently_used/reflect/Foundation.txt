@@ -1,0 +1,8 @@
+反射基础：
+    Type 接口：
+        Class 类： 代表 Java 中所有 原始类型(String, Object, List, 数组, 枚举, 注解) 和 基本类型（boolean, char, int, double）
+        ParameterizedType 接口： 代表 List<T> 整个表达式
+        GenericArrayType 接口： 代表 List<T>[] 整个表达式
+        TypeVariable 接口： 代表 List<T> 这个表达式中的 T 
+        WildcardType 接口： 代表 List<? extends Object> 这个表达式中的 ? extends Object 
+        

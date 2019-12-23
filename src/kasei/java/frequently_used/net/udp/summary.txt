@@ -1,0 +1,16 @@
+UDP
+
+客户端：
+ 1、创建客户端  DatagramSocket 类
+ 2、准备数据  字节数组
+ 3、打包 DatagramPacket + 服务器地址及端口
+ 4、发送资源
+ 5、释放资源
+ 
+ 
+ 服务器端：
+ 1、创建服务器端  DatagramSocket 类+指定端口
+ 2、准备接受容器（字节数组） 封装 DatagramPacket
+ 3、包 接受数据
+ 4、分析
+ 5、释放资源

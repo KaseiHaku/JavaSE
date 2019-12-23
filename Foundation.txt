@@ -1,0 +1,103 @@
+/******************************* Java Foundation ************************/
+Java 中的字符编码问题
+    不管 java 源文件的字符编码格式是何种字符集，当编译成 .class 文件后，编码格式都转化成 unicode(UTF-16) 格式
+    Java String 类型在内存中也是使用 unicode 编码的，只有在需要向其他地方输出的时候才转换成适配输出环境的编码格式
+    
+Java 中对象全等性判断：
+    1. obj.equals(obj2) 返回 true
+    2. 对象的 hashCode() 方法一致
+    3. 特别注意包装类的使用，
+        比如 int i=1; Integer j=1; list.remove();的时候，传入 i 和 j 的效果不同，因为 j 是对象，会用对象的方式进行全等判断
+
+Java 中获取系统参数
+    System.getProperties(); 方法上方包含所有属性 key
+
+Java 中的缺点：
+    继承的缺点：不灵活，修改父类需要修改对应子类
+    Solution: 使用组合和委托的方式避开继承，然后使用 Label 来对 class 分类，例如 Java 中的 Interface
+    封装的缺点：因为 Java 实例（对象）是传引用的，不是传值，所以会造成方法中对实例修改后影响原本的实例
+    Solution: 语言特性，没有办法，或许可以先 clone 一个实例再执行操作
+    
+Java 中类和对象的理解
+    类：一个事物的配置，相当于数据库中的表结构
+    对象：一个事物的具体配置，相当于数据库中一张表中的记录
+    
+Package 相关的基础知识
+    import kasei.serlet.*;  // 该导包语句只能导入当前包中的类，不会级联导入子包中的类
+    
+Function 相关的基础知识
+    1、Java 中所有函数都有两个隐式参数 this  super，其中this永远指向当前对象，super指向当前对象内包含的父类对象hr，hr是直接父类的对象
+    2、所有 private 方法都隐式的声明为 final 方法
+    3、所有的构造函数第一行代码永远是 super(args); 如果没有，说明隐式调用父类无参构造函数
+
+GC 相关的基础知识
+    JVM 有一个守护进程 System.gc();该守护进程：请求 JVM 进行垃圾回收，finalize()通常用于释放对象持有的资源
+    当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。
+    protected void finalize() throws Throwable { } //一旦垃圾回收器准备好释放对象内存是，将首先调用该方法，并在下一次垃圾回收时才真正回收内存
+
+Stream 流
+    Java 中新建的流必须进行手动关闭，并遵循谁打开（创建）谁关闭原则，即 被调函数参数中的流实例不要在被调函数中关闭
+
+
+ClassLoad 相关的基础知识
+    加载：
+        将类的class文件读入内存，并创建与之对应 的 java.lang.Class 的实例
+    链接：
+        验证：文件格式、语法、语义等验证
+        准备：为static 修饰的静态域做默认初始化，并在方法区分配内存空间
+        解析：将符号引用替换为直接引用
+    （显示）初始化：
+        创建类的实例
+        访问类或接口的静态变量（final static 修饰的常量不会对类进行显示初始化）
+        调用类的静态方法
+        反射（Class.forName(packageName.className)）
+        初始化类的子类
+        java虚拟机启动时被标明为启动类的类
+    
+Java 变量：
+    标识符：$  数字   _  英文字母（不能以数字开头）
+    类型：
+        局部变量：定义于方法或语句块；使用之前必须要手动初始化，否则编译出错
+        成员变量（实例变量）：定义于类里面、方法外面，从属于对象；系统自动初始化
+        静态变量（类变量）：static 修饰，从属于类
+
+    java 基本数据类型
+        数据类型            默认值                 包装类         占字节数
+        boolean             false               Boolean         视编译环境而定
+        char                '\u0000'(null)      Character		2
+
+        byte                0b00000000          Byte			1
+        short               0                   Short			2
+        int                 0（直接常量默认类型）  Integer			4
+        long                0l                  Long			8
+
+        float               0.0f                Float			4
+        double              0.0d（直接常量默认类型）Double			8
+
+        引用类型             null				无
+
+java.lang.NullPointException
+    Boolean bool = "".equals(str);  // 避免空指针检查
+    String result = (str==null) ? "" : str.substring(1, 4); // 使用三目运算比使用 if 判断要简洁明了
+
+Java 内部类：静态内部类、普通内部类、局部内部类、匿名内部类
+    访问修饰符：外部类：public, default；内部类：public, protect, default, private
+    访问权限：外部类访问内部类，不受访问修饰符控制，都可访问；其他类访问内部类，先看内部类本身的修饰符，然后在看内部类里面的方法和字段的修饰符
+    
+
+Java 项目包结构：
+    kasei                               # 根包
+    kasei.controller                    # Web 访问层
+    kasei.service                       # 业务服务层
+    kasei.repository                    # 数据持久层
+    kasei.extension                     # Global 扩展包
+    kasei.utility                       # Global 工具包
+    kasei.exception                     # Global 异常包
+    
+API(Application Programming Interface):      
+    指 Client 通过 Interface 调用 Server 提供的具体实现。场景：JDK 中各种类的方法
+SPI(Service Provider Interface):             
+    指 Server 通过 Interface 调用 Client 提供的具体实现，场景：插件，由主程序调用约定接口，具体实现在插件中，例如：JDBC
+
+
+
