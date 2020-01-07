@@ -23,12 +23,18 @@ ProjectRootDirectory
             │     └─ web.xml    # web 配置文件
             └─ index.html       # 主页，这一层主要放置 web 静态资源，当前现在流行放在 WEB-INF 目录中以防止资源被直接访问
 
-Jar 包目录结构：
+
+
+
+什么是 jar 包：采用 ZIP 压缩算法打包的 .class 文件的集合
+jar 包目录结构：
 kasei.haku-9.9.9.jar
     │
     ├─ META-INF     # 存放当前 jar 包的 元数据
     │   ├─ MANFEST.MF           # 该文件用于表明当前 jar 包的一系列属性，
     │                           # 例如：生成可执行 jar 需要指定 Main-Class:kasei.haku.MainClass 属性
-    └─ kasei        # 存放源码
+    └─ kasei        # 存放编译后的 .class 文件
         └─ haku
             └─ MainClass.class
+
+
