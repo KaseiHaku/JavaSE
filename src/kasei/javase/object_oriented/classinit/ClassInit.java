@@ -16,17 +16,23 @@ public class ClassInit {
 
     public String str2 = "父类：4、动态变量加载执行...";
 
-    {
+    public void print12(){
         System.out.println(str2);
-        System.out.println("父类：5、动态语句块加载执行...");
+        System.out.println("父类：5、动态函数加载执行...");
     }
 
-    public void print12(){
-        System.out.println("父类：6、动态函数加载执行...");
+    {
+        print12();
+        System.out.println("父类：6、动态语句块加载执行...");
     }
+
 
     public ClassInit(){
-        print12();
         System.out.println("父类：7、构造函数加载执行...");
+    }
+    
+    public static void main(String[] args) {
+        new ClassInit();
+        System.out.println("演示完毕");
     }
 }
