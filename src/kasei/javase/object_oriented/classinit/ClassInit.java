@@ -33,6 +33,6 @@ public class ClassInit {
     
     public static void main(String[] args) {
         new ClassInit();
-        System.out.println("演示完毕");
+        System.out.println("父类：演示完毕");
     }
 }
