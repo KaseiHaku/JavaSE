@@ -84,6 +84,15 @@ Java 内部类：静态内部类、普通内部类、局部内部类、匿名内
     访问修饰符：外部类：public, default；内部类：public, protect, default, private
     访问权限：外部类访问内部类，不受访问修饰符控制，都可访问；其他类访问内部类，先看内部类本身的修饰符，然后在看内部类里面的方法和字段的修饰符
     
+JavaBean 规范：
+    1. 必须是个公共类： public class MyJavaBean{}
+    2. 必须有一个公用的空的构造函数： public MyJavaBean(){}
+    3. 所有实例变量都必须是私有的： private String str;
+    4. 属性名和 getter setter 方法名的对应关系
+        4.1 属性名前两个字母小写，例如：abc，那么对应的 getter setter 如下： getAbc() setAbc()
+        4.2 属性名第二个字母大写，例如：aBc，那么对应的 getter setter 如下： getaBc() setaBc()
+        4.3 属性名前两个字母大写，例如：ABc，那么对应的 getter setter 如下： getABc() setABc()
+        4.4 属性名第一个大写，第二个小写，例如：Abc，不规范命名，会出错
 
 Java 项目包结构：
     kasei                               # 根包
