@@ -58,11 +58,20 @@ public class StreamIntermidateOperator{
     public void customizedCollector(){
         String[] strs = {"1213", "sdf", "sda"};
         Stream<String> stringStream = Arrays.stream(strs);
+        
+        
+        // 提供保存流收集操作结果的实例
         Supplier<Vector<String>> supplier = Vector::new;
+        // 指定怎么收集单个流内容
         BiConsumer<Vector<String>, String> accumulator = (intermediate, input) -> intermediate.add(input);
+        // 指定怎么收集并行操作时的流内容
         BinaryOperator<Vector<String>> combiner = (intermediate1, intermediate2) -> {intermediate1.addAll(intermediate2); return intermediate1;};
+        // 将最终的结果转换成想要的对象
         Function<Vector<String>, String[]> finisher = intermediate -> intermediate.toArray(new String[intermediate.size()]);
+        // 使用 Collector.of() 构建自定义流收集器
         Collector<String, Vector<String>, String[]> collector  = Collector.of(supplier, accumulator, combiner, finisher);
+        
+        
         String[] stt = stringStream.collect(collector);
         System.out.println(Arrays.toString(stt));
     }
