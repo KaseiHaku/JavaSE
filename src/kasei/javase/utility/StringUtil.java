@@ -1,7 +1,14 @@
 package kasei.utility;
 
 public class StringUtil {
-
+    
+    /** TODO 分割字符串，去除空白串，去除首尾空白符，去重 */
+    public static Set<String> multiValueStrSplitor(String str, String delimeter){
+        String[] split = str.split(delimeter);
+        Set<String> collect = Arrays.stream(split).filter(x -> StringUtils.isNotBlank(x)).map(x->x.trim()).collect(Collectors.toSet());
+        return collect;
+    }
+    
     /** todo 将字符串中的 html 特殊字符替换为字符实体 */
     public static String convert2HtmlFormat(String str){
         if(str==null || "".equals(str)){
@@ -24,7 +31,7 @@ public class StringUtil {
                 ;
         return result;
     }
-	
+    
     /** TODO 数字随机串生成工具
      * @param length 数字序列号的长度
      * */
@@ -36,7 +43,7 @@ public class StringUtil {
 
         return result;
     }
-	
+    
     /** todo 生成订单号，每秒100万忽略考虑订单号重复的情况
      * */
     public static String generateOrderNumber(){
@@ -100,7 +107,7 @@ public class StringUtil {
         result = originalStr + result;
         return result;
     }
-	
+    
     /**
      * todo 替换字符串中的控制字符 [\x00-\x1F\x7F]
      * */
@@ -111,3 +118,4 @@ public class StringUtil {
         return original.replaceAll("\\p{Cntrl}", "");
     }
 }
+
