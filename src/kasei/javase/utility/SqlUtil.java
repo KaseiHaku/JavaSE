@@ -27,11 +27,16 @@ public class SqlUtil{
             if(isBlurry){
                 result.append(" or ").append(colName).append(" like '%").append(val).append("%'");
             } else {
-                result.append(" or ").append(colName).append("='").append(val).append("' ");
+                result.append(", '").append(val).append("'");
             }
         });
         if(result.length()!=0){
-            result.delete(0,3).insert(0, " and (").append(") ");
+            if(isBlurry){
+                result.delete(0,3).insert(0, " and (").append(") ");
+            } else {
+                result.delete(0,2).insert(0, " and "+ colName + " in(").append(") ");
+            }
+
         }
 
         return result.toString();
