@@ -1,3 +1,5 @@
+import org.apache.commons.lang3.StringUtils;
+
 public class SqlUtil{
   
   public static String multiValueWhereEqualCondition(String colName, Set<String> vals, Boolean isBlurry){
@@ -6,7 +8,7 @@ public class SqlUtil{
             throw new IllegalArgumentException("列名不能为空");
         }
         if (vals == null || vals.size() == 0) {
-            throw new IllegalArgumentException("条件值不能为空");
+            return "";
         }
         if(isBlurry == null){
             throw new IllegalArgumentException("是否模糊匹配不能为空");
