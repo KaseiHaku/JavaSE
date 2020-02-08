@@ -2,18 +2,25 @@ import org.apache.commons.lang3.StringUtils;
 
 public class SqlUtil{
   
-  public static String multiValueWhereEqualCondition(String colName, Set<String> vals, Boolean isBlurry){
+    /** TODO 根据开发规范，数据库中数据，必须有默认值，并去除前后空格，不能保存除 ''空串以外的空白串
+     * 拼接多值的 sql 条件，去除 null，出去首尾空格 
+     * */
+    public static String multiValueWhereEqualCondition(String colName, Set<String> vals, Boolean isBlurry){
 
         if (StringUtils.isBlank(colName)) {
             throw new IllegalArgumentException("列名不能为空");
         }
         if (vals == null || vals.size() == 0) {
             return "";
+        } else {
+            vals = vals.stream().filter(x -> x != null).map(x -> x.trim()).collect(Collectors.toSet());
+            if(vals==null || vals.size()==0){
+                return "";
+            }
         }
         if(isBlurry == null){
             throw new IllegalArgumentException("是否模糊匹配不能为空");
         }
-
 
         StringBuilder result = new StringBuilder();
         vals.stream().forEach( val -> {
@@ -32,7 +39,7 @@ public class SqlUtil{
   
   
   
-  /** todo 动态 sql 裁剪
+    /** todo 动态 sql 裁剪
      * @param prefix 裁剪后需要添加的前缀，如果裁剪后为空串，则不添加
      * @param prefixOverride 需要删除的前缀，多个 '|' 分隔
      * @param suffix 裁剪后需要添加的后缀， 如果裁剪后为空串，则不添加
