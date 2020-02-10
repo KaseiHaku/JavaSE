@@ -32,6 +32,13 @@ public class OracleJdbc {
          * getResource("") 获取的是 out/production/classes
          * 当时当给 getResource("configuration") 传参数的时候，他就会去找 out/production/resources 目录下的文件的
          * */
+        /**
+        driverClassName = oracle.jdbc.OracleDriver
+        jdbcUrl = jdbc:oracle:thin:@10.63.29.99:1521/BPM12CTS
+        username = bpm_issue
+        password = 1234
+
+        */
         String propsFilePath = Haku.class.getClassLoader().getResource("configuration/hikari.properties").getPath();
         System.out.println(propsFilePath);
         HikariConfig hikariConfig = new HikariConfig(propsFilePath);
