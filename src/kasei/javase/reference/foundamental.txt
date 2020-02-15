@@ -1,0 +1,5 @@
+Java 中的引用类型：
+    StrongReference 强引用：不会被回收 GC 回收，当内存空间不足，抛出 OutOfMemoryError 错误
+    SoftReference 软引用：内存空间足够时，不会被 GC 回收
+    WeakReference 弱引用: GC 线程扫描到 弱引用，直接回收内存
+    PhantomReference 虚引用：必须和 ReferenceQueue 一起使用
