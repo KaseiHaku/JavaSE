@@ -3,7 +3,7 @@ JVM 内存架构：
         年轻代： Minor GC, GC 算法为：复制法
             eden(伊甸园)：
             Survivor1：
-            Survivor2： Survivor 1 和 2 每次只使用一个
+            Survivor2： Survivor 1 和 2 每次只使用一个，当 n 次（默认 15 次） MinorGC 后还存在的对象，进入老年代
             
         老年代：Major GC 或 Full GC, GC 算法为：标记-清除、标记-整理，大对象直接进 老年代
         
