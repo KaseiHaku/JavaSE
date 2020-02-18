@@ -1,5 +1,27 @@
-对象是否该回收算法：
+对象是否可回收判断算法：
     可达性分析法：以图论来理解，就是从 GC Root 到这个对象不可达时，回收这个对象
+
+
+GC Algorithm：
+    标记-复制法：
+    标记-清除法：
+    标记-整理法：
+    
+GC 执行算法：
+    古典时代：
+        Serial(年轻代), SerialOld(老年代)                   # 垃圾回收时暂停业务线程，单个 GC 线程执行垃圾回收
+        Parallel Scavenge(年轻代), Parallel Old(老年代)     # 垃圾回收时暂停业务线程，多个 GC 线程执行垃圾回收
+    中古时代：
+        ParNew(年轻代):                            # 仅适用于年轻代
+        CMS(老年代): Concurrent Mark Sweep         # 标记时不暂停业务线程，只适用于 老年代，不进行 Compact，最新 JDK 已删除
+    现代：
+        G1: 不再是连续的 eden survivor1 suvivor2 tenured 内存结构，而是跟硬盘一样进行了分区，每个区大小相同
+            Fully Young GC：
+            Mixed GC：包含一次 Fully Young GC
+    未来：
+        ZGC: Oracle 实现的
+        Shenandoah: Red Hat 实现的
+    
 
 GC ROOT：
     栈帧中的本地变量中引用的实例（对象）
