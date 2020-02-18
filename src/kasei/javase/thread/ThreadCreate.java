@@ -76,6 +76,12 @@ public class ThreadCreate {
          * 3. 如果当前线程池中的线程数目达到 maximumPoolSize，则会采取任务拒绝策略进行处理
          * 4. 如果线程池中的线程 > corePoolSize 时，如果某线程空闲时间超过 keepAliveTime ，线程将被终止，直至线程池中线程数目不大于 corePoolSize
          *    如果允许为核心线程设置存活时间，那么核心线程空闲时间超过 keepAliveTime，核心线程也会被终止
+         * 
+         * 线程池拒绝策略：
+         *    DiscardPolicy：直接丢弃当前任务
+         *    DiscardOldestPolicy：丢弃最老的任务
+         *    AbortPolicy：抛异常，会中断调用者线程
+         *    CallerRunsPolicy：返回任务给调用者线程执行
          * */
         ExecutorService executor = new ThreadPoolExecutor(
                 int corePoolSize,                       // 核心线程数
