@@ -84,7 +84,7 @@ public class ThreadCreate {
                 TimeUnit unit,                          // 存活时间的单位
                 BlockingQueue<Runnable> workQueue,      // 阻塞队列
                 ThreadFactory threadFactory,            // 线程工厂
-                RejectedExecutionHandler handler        // 拒绝策略
+                RejectedExecutionHandler handler        // 任务拒绝策略
         );
 
         // todo 实现 Callable 接口
