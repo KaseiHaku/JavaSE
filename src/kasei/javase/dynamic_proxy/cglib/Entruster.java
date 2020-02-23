@@ -1,4 +1,4 @@
-package kasei.javase.se.dynamicproxy.cglib;
+package kasei.javase.dynamic_proxy.cglib;
 
 // 委托类
 public class Entruster {

@@ -1,0 +1,4 @@
+怎么解决 Java 集合类线程不安全的问题？
+    1. 换成线程安全的类
+    2. Collections.synchronizedList() 方法转换成安全的
+    3. 使用 juc 下面的同步集合，比 synchronized 实现的同步方法效率高

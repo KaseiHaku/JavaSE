@@ -1,6 +1,10 @@
-package kasei.javase.se.dynamicproxy.cglib;
+package kasei.javase.dynamic_proxy.cglib;
 
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class KaseiMethodInterceptor implements MethodInterceptor {
@@ -13,10 +17,10 @@ public class KaseiMethodInterceptor implements MethodInterceptor {
 
     public static void main(String[] args) {
         Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(HelloConcrete.class);
+        enhancer.setSuperclass(Entruster.class);
         enhancer.setCallback(new KaseiMethodInterceptor());
 
         Entruster hello = (Entruster)enhancer.create();
-        System.out.println(hello.sayHello("I love you!"));
+        hello.sayHello();
     }
 }

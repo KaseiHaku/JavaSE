@@ -1,6 +1,9 @@
 package kasei.javase.se.dynamicproxy.jdk;
 
 
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 public class JdkDynamicProxyDemo {
 
@@ -50,7 +53,7 @@ public class JdkDynamicProxyDemo {
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true"); 
 
         // 生成动态代理的代理类实例
-        DelegatorInterface delegatorInterface = (DelegatorInterface)Proxy.newProxyInstance(
+        DelegatorInterface delegatorInterface = (DelegatorInterface) Proxy.newProxyInstance(
                 DelegatorInterface.class.getClassLoader(),
                 new Class[]{DelegatorInterface.class},
                 new DelegatorInterfaceInvocationHandler(new Delegator())
