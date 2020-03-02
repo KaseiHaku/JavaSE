@@ -2,75 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7835ef1c-66f6-4948-9b7f-8ecfde6a7c6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/asm-7.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cglib-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kasei/javase/collection/basic.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kasei/javase/juc/unsafeset/basic.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kasei/javase/jvm/ClassLoad.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaSE.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/cglib/Entruster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/cglib/Entruster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/cglib/KaseiMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/cglib/KaseiMethodInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/jdk/JdkDynamicProxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/dynamic_proxy/jdk/JdkDynamicProxyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/ByteStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/ByteStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/ChangeStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/ChangeStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/CharStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/CharStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/DealStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/DealStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/MergeStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/MergeStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/ZipStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/ZipStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/file/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/file/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/keyboard/KeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/keyboard/KeyboardInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/io/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/bio/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/nio/NioDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/io/nio/NioDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/stream/OptionalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/stream/OptionalDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/frequently_used/stream/StreamOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/stream/StreamOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/ContextLoaderDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/CustomClassLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/FileSystemClassLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/GC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/jvm/GC.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/K01Jvm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/K04MyClassLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/K07Tomcat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/K08OSGI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/MemoryStructure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/jvm/MemoryStructure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/architecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/jvm/JVM.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/classloader/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/jvm/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/object_oriented/container/EqualsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/collection/EqualsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/object_oriented/container/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/reference/foundamental.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/ThreadCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/ThreadCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/ThreadExceptionDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/ThreadExceptionDeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/ThreadInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/ThreadIsolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/ThreadIsolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/ThreadOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/ThreadOperate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo1/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo2/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo3/ConsumerMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/demo3/ConsumerMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo3/KaoYa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/demo3/KaoYa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo3/MultipleProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/demo3/MultipleProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo3/ProducerMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/demo3/ProducerMultiple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/demo3/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/demo3/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/correspond/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/Synchronized6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/synchronize/Synchronized6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/lock/LockDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/situation/Situation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/situation/Situation1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kasei/javase/thread/synchronize/situation/Situation2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,57 +16,33 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kasei/javase/collection/basic.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+        <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/base.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="46" lean-forward="true" selection-start-column="46" selection-end-column="46" />
+            <state relative-caret-position="-910" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.editorconfig">
+        <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/communication/Demo3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="195">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -152,6 +61,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt" />
       </list>
     </option>
   </component>
@@ -161,18 +71,15 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="1364" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -184,18 +91,51 @@
             <path>
               <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kasei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kasei" type="462c0819:PsiDirectoryNode" />
+              <item name="javase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kasei" type="462c0819:PsiDirectoryNode" />
+              <item name="javase" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kasei" type="462c0819:PsiDirectoryNode" />
+              <item name="javase" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaSE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kasei" type="462c0819:PsiDirectoryNode" />
+              <item name="javase" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,6 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -230,29 +171,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582457230175</updated>
-      <workItem from="1582457233898" duration="629000" />
+      <workItem from="1582457233898" duration="760000" />
+      <workItem from="1582523255430" duration="2789000" />
+      <workItem from="1582698130884" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="629000" />
+    <option name="totallyTimeSpent" value="4180000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1380" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1380" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24706745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32970452" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -260,15 +198,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32192847" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,13 +222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -306,15 +242,51 @@
     <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSE.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" lean-forward="true" selection-start-column="46" selection-end-column="46" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kasei/javase/collection/basic.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/communication/Demo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/communication/basic.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kasei/javase/juc/base.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-910" />
       </provider>
     </entry>
   </component>
