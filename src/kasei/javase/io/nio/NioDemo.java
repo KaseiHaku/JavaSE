@@ -27,19 +27,20 @@ public class NioDemo {
 
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 
-        int readResult = fileChannel.read(byteBuffer);
-        while (readResult != -1) {
+        int readResult = = 0;
+        do {
+            readResult = fileChannel.read(byteBuffer); // 从 channel 中读取数据，写入到 buffer 中
             System.out.println("Read " + readResult);
-            byteBuffer.flip(); // 将 buffer 从被写模式切换到被读模式
-
+            byteBuffer.flip();// 将 buffer 从被写模式切换到被读模式
+            
             while(byteBuffer.hasRemaining()){
                 System.out.print((char) byteBuffer.get()); // 从 buffer 中读取数据
             }
 
             byteBuffer.clear(); // 清空 buffer ，并使 buffer 回到被写模式
             byteBuffer.compact();// 只清空已经被读取的数据，未被读取的数据，将放到 buffer 起始位置，供下次读取，并使 buffer 回到被写模式
-            readResult = fileChannel.read(byteBuffer); // 从 channel 中读取数据，写入到 buffer 中
-        }
+            
+        } while (read != 0);
         fileChannel.close();
     }
 
