@@ -27,7 +27,7 @@ public class NioDemo {
 
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 
-        int readResult = = 0;
+        int readResult = = -1;  // 必须是 -1 ，因为 -1 是文件尾标记
         do {
             readResult = fileChannel.read(byteBuffer); // 从 channel 中读取数据，写入到 buffer 中
             System.out.println("Read " + readResult);
@@ -40,7 +40,7 @@ public class NioDemo {
             byteBuffer.clear(); // 清空 buffer ，并使 buffer 回到被写模式
             byteBuffer.compact();// 只清空已经被读取的数据，未被读取的数据，将放到 buffer 起始位置，供下次读取，并使 buffer 回到被写模式
             
-        } while (read != 0);
+        } while (read != -1);
         fileChannel.close();
     }
 
