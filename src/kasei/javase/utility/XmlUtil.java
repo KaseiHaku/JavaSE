@@ -76,13 +76,18 @@ public class XmlUtil {
         format.setXHTML(true);
         format.setNewlines(true);
         format.setExpandEmptyElements(true);
-        XMLWriter writer = new XMLWriter(System.out, format);
+        
+        
+        OutputStream os = new ByteArrayOutputStream(); // 将输出流转换成 String
+        
+        XMLWriter writer = new XMLWriter(os, format);
         //writer.write( document.getRootElement().asXML() );
         //writer.setEscapeText(false);
         
         writer.write( document.getRootElement() );
-        
         writer.close();
+        
+        System.out.println(os.toString());
         return null;
     }
 
