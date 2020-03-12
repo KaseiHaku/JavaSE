@@ -77,7 +77,11 @@ public class XmlUtil {
         format.setNewlines(true);
         format.setExpandEmptyElements(true);
         XMLWriter writer = new XMLWriter(System.out, format);
+        //writer.write( document.getRootElement() );
+        //writer.setEscapeText(false);
+        
         writer.write( document.getRootElement().asXML() );
+        
         writer.close();
         return null;
     }
