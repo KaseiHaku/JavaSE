@@ -89,10 +89,15 @@ public class SingletonPattern {
 
     /** TODO 枚举类方式：唯一一种不会被破坏的单例模式 */
     public static enum EnumSingleton {
-        INSTANCE;
-        private EnumSingleton(){}
-        public static EnumSingleton getInstance(){
-            return INSTANCE;
+        ENUM_SINGLETON1;
+
+        private OkHttpClient instance;
+        private OkHttpSingleton(){
+            instance = new OkHttpClient();
+        }
+
+        public OkHttpClient getInstance(){
+            return instance;
         }
     }
 
@@ -100,7 +105,7 @@ public class SingletonPattern {
 
 
     public static void main(String[] args) {
-
+        EnumSingleton.ENUM_SINGLETON1.getInstance();
 
     }
 }
