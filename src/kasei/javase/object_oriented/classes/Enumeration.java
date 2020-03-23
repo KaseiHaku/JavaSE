@@ -39,6 +39,7 @@ public enum Enumeration implements MyInterface { // 枚举类可以实现接口
         this.foo = foo;    
     }
 
+    /** TODO 该抽象方法必须在枚举实例中实现 */
     public abstract String asLowerCase();
 
     public static void main(String[] args) {
