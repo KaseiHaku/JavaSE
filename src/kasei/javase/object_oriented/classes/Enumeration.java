@@ -10,19 +10,36 @@ import java.util.Arrays;
  * java.lang.Enum 包含两个字段： ordinal, name
  * ordinal 默认从 0 开始，每次 +1，可以赋值，赋值后，之后的值在赋值数字的基础上 +1
  * */
-public enum Enumeration {
+public enum Enumeration implements MyInterface { // 枚举类可以实现接口
 
     //枚举类型是 常量 跟 'a' 一样，不能实例化的（即不能 new 和 Colors colors 定义引用）
-    RED(1), GREEN(2), BULE(3), YELLOW(4), PURPLE(5), PINK(6);//这些就是枚举类的实例，括号内的相当于构造函数的参数
+    RED         (1, "red"),     // 调用构造函数，来构造 RED 实例，其中 (1,"red") 是构造函数的实参
+    GREEN       (2,"green"){
+        
+        // 因为该方法在 Enumeration 类中是抽象方法，而 GREEN 是 Enumeration 的实例，
+        // 因为抽象类不能创建实例，所以 GREEN 肯定需要实现抽象方法
+        @Override
+        public String asLowerCase() {
+            return HIGH.toString().toLowerCase();
+        }
+    }, 
+    BULE        (3,"blue"), 
+    YELLOW      (4,"yellow"), 
+    PURPLE      (5,"purple"), 
+    PINK        (6,"pink")      //这些就是枚举类的实例，括号内的相当于构造函数的参数
+    ;
 
 
     private Integer value;
+    private String foo;
 
 
-    private Enumeration(Integer value){
-            this.value = value;
+    private Enumeration(Integer value, String foo){
+        this.value = value;
+        this.foo = foo;    
     }
 
+    public abstract String asLowerCase();
 
     public static void main(String[] args) {
 
