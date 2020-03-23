@@ -87,6 +87,7 @@ public class SingletonPattern {
 
     }
 
+    /** TODO 枚举类方式：唯一一种不会被破坏的单例模式 */
     public static enum EnumSingleton {
         INSTANCE;
         private EnumSingleton(){}
