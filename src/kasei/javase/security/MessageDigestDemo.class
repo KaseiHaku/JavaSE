@@ -17,7 +17,7 @@ public class MessageDigestDemo {
 
         try {
             // 获取一种消息摘要算法，具体有哪些消息摘要算法看 Java API 文档
-            MessageDigest md = MessageDigest.getInstance("SHA-256"); 
+            MessageDigest md = MessageDigest.getInstance("SHA-384"); 
             // 将要摘要的内容转换成字节数组
             byte[] bytes = content.getBytes(Charset.forName("utf-8"));
             // 对字节数组进行摘要
