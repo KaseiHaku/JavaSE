@@ -103,12 +103,13 @@ Java 项目包结构：
     kasei.utility                       # Global 工具包
     kasei.exception                     # Global 异常包
     
-API(Application Programming Interface):      
-    指 Client 通过 Interface 调用 Server 提供的具体实现。场景：JDK 中各种类的方法
-    你有吗？有，手动调；没有，调了报错
-SPI(Service Provider Interface):             
-    指 Server 通过 Interface 调用 Client 提供的具体实现，场景：插件，由主程序调用约定接口，具体实现在插件中，例如：JDBC
-    你有，我就自动调，没有我就不调
+API(Application Programming Interface):   
+    调用者 通过接口调用 实现方 的代码，其中接口在实现方的叫 API
+    应用场景：JDK 中各种类的方法
+    
+SPI(Service Provider Interface):
+    调用者 通过接口调用 实现方 的代码，其中接口在调用方的叫 SPI
+    应用场景：插件，由主程序调用约定接口，具体实现在插件中，例如：JDBC
 
 volatile 关键字：
     因为 jvm 运算时，会将 heap 中的对象复制一份到 线程栈中，线程中所有的操作都仅针对线程栈中的变量，而不会直接修改 heap 中的值，
