@@ -9,6 +9,8 @@ import java.util.Arrays;
  * enum 关键字，是 public class Enumeration extends java.lang.Enum{} 的语法糖
  * java.lang.Enum 包含两个字段： ordinal, name
  * ordinal 默认从 0 开始，每次 +1，可以赋值，赋值后，之后的值在赋值数字的基础上 +1
+ * enum toString() 方法返回声明实例的名称
+ * enum valueOf("RED") 方法返回对应名称的声明实例 
  * */
 public enum Enumeration implements MyInterface { // 枚举类可以实现接口
 
