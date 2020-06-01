@@ -130,4 +130,16 @@ volatile 关键字：
             1. 线程 A 读取 i 的值，然后立马被阻塞
             2. 线程 B 读取 i 的值，+1，并写回内存；写回内存的同时会使 线程 A 的缓存失效，CPU 硬件实现
             3. 由于线程 A 读取 i 值的操作已经执行过了，所以不会再执行一遍读的操作，线程 B 导致的线程 A 缓存的失效，并不影响已经读取的值，导致错误
-
+            
+Reference:
+    StrongReference: 
+        一个 instance 具有强引用，如果内存空间不足，那么会抛出 OutOfMemoryError 错误
+    SoftReference: 
+        一个 instance 只具有软引用，内存空间充足，不回收；内存空间不足，则回收 instance，并把 软引用本身 放到 ReferenceQueue 中
+    WeakReference: 
+        一个 instance 只具有弱引用，不管内存空间是否足够，都回收，
+        如果 instance 被回收，那么把 弱引用本身 放到 ReferenceQueue 中
+    PhantomReference: 
+        一个 instance 只具有虚引用，那么它就和没有任何引用一样，在任何时候都可能被垃圾回收器回收，
+        和 软引用/弱引用的区别是，虚引用必须和 ReferenceQueue 一起使用，
+        虚引用指向的对象被回收，虚引用本身被放入 ReferenceQueue 中
