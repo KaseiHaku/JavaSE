@@ -82,7 +82,7 @@ public class SingletonPattern {
         
         /** TODO 2. 定义一个私有静态内部类
          * 由于 JVM 只有在用到了才会加载类，所以不调 StaticInnerClassSingleton#getInstance 方法，该类是不会加载的，实现了延时加载
-         * 由于 java.lang.Class 类实例化的时候，JVM 会保证其线程安全性，所以是线程安全的
+         * 由于 java.lang.Class 类实例化的时候，JVM 会保证该过程只有一个线程在执行，所以是线程安全的
          * */
         private static class SingletonCreatorInnerClass{
             public static StaticInnerClassSingleton instance = new StaticInnerClassSingleton();
