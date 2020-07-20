@@ -1,6 +1,5 @@
-package kasei.springcloud.haku.file;
+package kasei.javase.io.nio;
 
-import com.sun.security.ntlm.Client;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

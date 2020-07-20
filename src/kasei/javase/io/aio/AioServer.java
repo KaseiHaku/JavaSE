@@ -1,13 +1,10 @@
-package kasei.springcloud.haku.file;
+package kasei.javase.io.aio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
-import java.nio.channels.AsynchronousChannelGroup;
-import java.nio.channels.AsynchronousServerSocketChannel;
-import java.nio.channels.AsynchronousSocketChannel;
-import java.nio.channels.CompletionHandler;
+import java.nio.channels.*;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.util.Date;
@@ -22,8 +19,10 @@ public class AioServer {
     private static CharsetEncoder encoder = charset.newEncoder();
 
     public static void main(String[] args) throws Exception {
-        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(4));
-        AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open(group).bind(new InetSocketAddress("0.0.0.0", 8013));
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(4)); // 创建一个 async channel group
+        AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open(group); // 开启一个 异步 socket channel,并绑定到 channel group
+        server.bind(new InetSocketAddress("0.0.0.0", 8013), 1); // 绑定端口,设值最大等待连接数
+
         server.accept(null, new CompletionHandler<AsynchronousSocketChannel, Void>() {
             @Override
             public void completed(AsynchronousSocketChannel result, Void attachment) {

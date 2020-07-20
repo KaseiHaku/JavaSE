@@ -1,4 +1,4 @@
-package kasei.springcloud.haku.file;
+package kasei.javase.io.aio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -33,6 +33,15 @@ public class AioClient {
             }
         });
 
+        for (int i = 0; ; i++) {
+            ByteBuffer byteBuffer = buffer.putInt(i);
+            client.write(byteBuffer);
+        }
+
+
+
+
         Thread.sleep(10000);
     }
+
 }
