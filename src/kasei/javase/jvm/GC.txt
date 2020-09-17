@@ -20,8 +20,18 @@ GC 执行算法：
         Serial(年轻代), SerialOld(老年代)                   # 垃圾回收时暂停业务线程，单个 GC 线程执行垃圾回收
         Parallel Scavenge(年轻代), Parallel Old(老年代)     # 垃圾回收时暂停业务线程，多个 GC 线程执行垃圾回收
     中古时代：
-        ParNew(年轻代):                            # 只适用于 年轻代
-        CMS(老年代): Concurrent Mark Sweep         # 只适用于 老年代，标记时不暂停业务线程，不进行 Compact，最新 JDK 已删除
+        ParNew(年轻代):                            # 只适用于 年轻代，并行的 mark-copy 算法，GC 过程也会 Stop the World；
+        CMS(老年代): Concurrent Mark Sweep         # 只适用于 老年代，标记时不暂停业务线程，不进行 Compact，最新 JDK 已删除，mark-sweep 算法，发生一次 Full GC
+                                                  # 1. initial-mark  stop-the-world 标记那些直接被 GC root 引用或者被年轻代存活对象所引用的所有对象
+                                                  # 2. concurrent-mark 遍历老年代，然后标记所有存活的对象，它会根据上个阶段找到的 GC Roots 遍历查找
+                                                  # 3. Concurrent Preclean：这也是一个并发阶段，与应用的线程并发运行，并不会 stop 应用的线程。
+                                                  #    在并发运行的过程中，一些对象的引用可能会发生变化，但是这种情况发生时，JVM 会将包含这个对象的区域（Card）标记为 Dirty，
+                                                  #    这也就是 Card Marking
+                                                  # 4. Concurrent Abortable Preclean
+                                                  # 5. Final Remark: 这是第二个 STW 阶段，也是 CMS 中的最后一个，这个阶段的目标是标记所有老年代所有的存活对象，
+                                                  #    由于之前的阶段是并发执行的，gc 线程可能跟不上应用程序的变化，为了完成标记老年代所有存活对象的目标，STW 就非常有必要了
+                                                  # 6. Concurrent Sweep
+                                                  # 7. Concurrent Reset
     现代：
         G1: 不再是连续的 eden survivor1 survivor2 tenured 内存结构，而是跟硬盘一样进行了分区，每个区大小相同
             Fully Young GC：
