@@ -38,3 +38,25 @@ kasei.haku-9.9.9.jar
             └─ MainClass.class
 
 
+
+Java 相关的有用的网站：
+    https://www.findjar.com         # 根据包名查找 jar 包的名字
+    http://jcenter.bintray.com      # 下载 jar 包
+    https://mvnrepository.com       # 下载 jar 包
+    https://howtodoinjava.com/      # 好的学习网站
+    http://tutorials.jenkov.com/java-nio/index.html # java nio
+
+如何查看 Java 源代码 
+    Java 实例(对象)本质上就是一个 内存块，想要理解这个内存块，就要看它一开始是怎么被构建，所以查看顺序如下
+    静态语句块（类一加载就会执行） -> 动态语句块（创建类实例时执行，且在构造方法之前执行） -> 构造方法
+    Java 创建实例的方法：
+        1. 通过构造函数创建。该方法包括通过 new，clone，反射
+        2. 通过反序列化创建。该方式是唯一不会调用任何构造函数的
+
+
+Java 中的难点 
+    1. 动态编译
+    2. ClassLoader
+    3. 反射
+    4. 多线程
+
