@@ -2,6 +2,7 @@ Trap: List Array Exchange
     list to array： 
         错误写法：String[] ary = (String [])list.toArray(); 这样写编译没有什么问题，但是运行时会报 ClassCastException
         正确写法：String[] ary = list.toArray(new String[list.size()]);
+        原因：泛型擦除，List<String> list = new ArrayList<>(); 在实际字节码中其实是这样的 List list = new ArrayList(); 将 String 类型擦除，统一保存为 Object 类型了
 
 Trap: List 调用 remove() 方法时，for(;;) 报 IndexOutOfBoundsException、for(:) 报 ConcurrentModificationException
     解决方案：使用 Iterator 遍历，他会自动维护索引
