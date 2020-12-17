@@ -11,6 +11,7 @@ Java 中对象全等性判断：
 
 Java 中获取系统参数
     System.getProperties(); 方法上方包含所有属性 key
+    System.identityHashCode(obj);  查看 obj 对象在内存中的地址
 
 Java 中的缺点：
     继承的缺点：不灵活，修改父类需要修改对应子类
