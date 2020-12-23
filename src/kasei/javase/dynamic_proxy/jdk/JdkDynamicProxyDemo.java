@@ -36,6 +36,7 @@ public class JdkDynamicProxyDemo {
             this.delegator = delegator;
         }
 
+        
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
@@ -52,7 +53,9 @@ public class JdkDynamicProxyDemo {
         // 加上这句将会产生一个$Proxy0.class文件，这个文件即为动态生成的代理类文件
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true"); 
 
-        // 生成动态代理的代理类实例
+        
+        /* 生成动态代理的代理类实例
+         * Proxy.newProxyInstance(); 完全不需要 delegator 的存在，直接根据接口类 I，自动生成一个实现类 A，并创建一个 A 类的实例 a 返回 */
         DelegatorInterface delegatorInterface = (DelegatorInterface) Proxy.newProxyInstance(
                 DelegatorInterface.class.getClassLoader(),
                 new Class[]{DelegatorInterface.class},
