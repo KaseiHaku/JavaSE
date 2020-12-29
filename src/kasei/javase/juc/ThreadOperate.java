@@ -52,9 +52,9 @@ public class ThreadOperate {
     }
 
 
-    /** interruput 操作一般配合一个 stopFlag 共享变量一起使用，当 stopFlag 变更后，
-     * 应立即调用 t.interrupt() 方法修改 t 线程实例的 打断标志, 如果此时 t 线程在 阻塞 或者 等待状态，就会抛出 InterruptedException 异常
-     * 通过 catch 该异常，来让 t 线程自行决定执行逻辑
+    /** interruput 操作一般配合一个 stopFlag 共享变量一起使用，当 stopFlag 变更后，应立即调用 t.interrupt() 方法修改 t 线程实例的 打断标志,
+     * 如果此时 t 线程在 阻塞 或者 等待状态，就会抛出 InterruptedException 异常，通过 catch 该异常，来让 t 线程自行决定执行逻辑
+     * 如果此时 t 线程不在 阻塞 或者 等待状态，那么可以通过判断 Thread.currentThread().isInterrupted() 来决定执行逻辑
      * */
     public static void interrupt(){
         Thread t = new Thread(()->{
