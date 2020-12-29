@@ -52,11 +52,18 @@ public class ThreadOperate {
     }
 
 
+    /** interruput 操作一般配合一个 stopFlag 共享变量一起使用，当 stopFlag 变更后，
+     * 应立即调用 t.interrupt() 方法修改 t 线程实例的 打断标志, 如果此时 t 线程在 阻塞 或者 等待状态，就会抛出 InterruptedException 异常
+     * 通过 catch 该异常，来让 t 线程自行决定执行逻辑
+     * */
     public static void interrupt(){
         Thread t = new Thread(()->{
             try {
                 for (int i = 0; !Thread.currentThread().isInterrupted() && i<100; i++) {
-                    Thread.sleep(1000);   // 只有在线程处于阻塞状态时被 interrupt 才会抛 InterruptedException 异常，可以选择注释掉该行进行对比
+                    // 只有在线程处于阻塞状态时被 interrupt 才会抛 InterruptedException 异常，可以选择注释掉该行进行对比
+                    // 更准确的说：当当前线程不占用 CPU 时间片的时候，被 interruput 就会抛出 InterruptedException 异常，
+                    // 并使当前线程 退出 阻塞 或者 等待状态，重新进入 可执行状态
+                    Thread.sleep(1000);   
                     System.out.println("sleep = " + i);
                 }
             } catch (InterruptedException e) { // 该异常会清除 interrupt 标记
