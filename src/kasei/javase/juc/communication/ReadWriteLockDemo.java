@@ -21,6 +21,9 @@ public class ReadWriteLockDemo {
          * 写 - 写： 不能共存
          * 读锁：是 共享锁
          * 写锁：是 排他锁，独占锁
+         * 同一个线程
+         *      先获取 读锁但不释放，再获取写锁，无法实现，即： 读锁 无法 升级为 写锁
+         *      先获取 写锁但不释放，再获取读锁，可以实现，即： 写锁 可以 降级为 读锁
          * */
         ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
