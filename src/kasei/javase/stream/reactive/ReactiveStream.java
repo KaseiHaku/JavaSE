@@ -91,6 +91,7 @@ public class ReactiveStream {
 
 
         // 发布者 跟 订阅者 签订协议，所以该方法必定会创建或持有一个 Subscription 协议对象
+        // 该方法用于将 订阅者注册到该发布者上，或者叫该发布者签署一个订阅者
         @Override
         public void subscribe(Flow.Subscriber<? super List<Integer>> subscriber) {
             // 判断当前 subscriber 是不是 MySubscriber 的实例
