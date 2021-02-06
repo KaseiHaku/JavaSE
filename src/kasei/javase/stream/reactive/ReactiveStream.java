@@ -12,6 +12,17 @@ import java.util.concurrent.TimeUnit;
  * 响应式流 是一种解决 生产者-消费者模型 的编程模型，也可以说是一种设计模式，跟单例之类的一样
  *
  * Publisher - m:n - Subscription -1:1- Subscriber
+ * 
+ * 响应式流执行步骤：
+ *      Publisher                   Subscription                Subscriber
+ *  1   subscribe(Subscriber)                                                                   # Publisher 调用该方法签约 Subscriber
+ *  2                                                           onSubscribe(Subscription)       # Publisher subscribe() 成功后调用
+ *  3                               request(Long)                                               # Subscriber onSubscribe() 成功后调用该方法请求数据
+ *  4                                                           onNext(T)                       # Publisher 调用该方法发送数据
+ *  5                               cancel()                                                    # Subscriber 不想继续接收数据
+ *  6                                                           onError(Throwable)              # Publisher 出错，或者 Subscriber 自身出错，调用该方法
+ *  7                                                           onComplete()                    # Publisher 无后续数据发送，调用该方法
+ *
  */
 public class ReactiveStream {
 
