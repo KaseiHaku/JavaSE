@@ -24,6 +24,24 @@ import java.util.concurrent.TimeUnit;
  *  6                                                           onError(Throwable)              # Publisher 出错，或者 Subscriber 自身出错，调用该方法
  *  7                                                           onComplete()                    # Publisher 无后续数据发送，调用该方法
  *
+ * Reactor 响应式编程实际代码逻辑
+ *  1. Reactor 每次执行一个 Operator 都独立生成一个 Mono(Flux) 对象，该对像中保存着对原始 Mono(Flux) 对象的处理逻辑
+ *  2. 基于其他 Mono1 创建出来的 Mono2,再基于 Mono2 创建出 Mono3，
+ *     那么在 Mono3.subscribe(subscriber) 方法内部会调用 Mono2.subscribe(subscriber)，
+ *     Mono2.subscribe(subscriber) 方法内部会调用 Mono1.subscribe(subscriber)，如果有更多，以此类推。
+ *     如果需要在执行过程中做修改，那么创建一个代理 subscriber 实例，用来代理原来的 subscribe，并将代理 subscriber 继续向上传递，
+ *     在新的 subscriberProxy 中可以修改 onNext onComplete 等方法实现自定义逻辑，
+ *     也可以在 Mono3.subscribe(subscriber) 方法中的 Mono2.subscribe(subscriber) 代码前后添加额外的逻辑
+ *  3. 整体逻辑如下:
+ *      Mono1
+ *          封装 Mono1 生成 Mono2
+ *              封装 Mono2 生成 Mono3
+ *              调用 Mono3.subscribe(subscriber3) 签约
+ *          Mono3.subscribe(subscriber3) 内部调用 Mono2.subscribe(subscriber3 || subscriber3Proxy) 签约
+ *      Mono2.subscribe(subscriber2) 内部调用 Mono1.subscribe(subscriber2 || subscriber2Proxy)
+ *      Mono1.subscribe(subscriber1) 内部调用 subscriber1.onSubscribe(subscription1) 方法
+ *          subscriber1.onSubscribe(subscription1) 内部调用 subscriber2.onSubscribe(subscription2)      # subscription2 可以是 subscription1 本身或者是其代理实例
+ *              subscriber2.onSubscribe(subscription2) 内部调用 subscriber3.onSubscribe(subscription3)
  */
 public class ReactiveStream {
 
