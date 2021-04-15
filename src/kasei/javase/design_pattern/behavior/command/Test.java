@@ -1,7 +1,11 @@
 package kasei.javase.designpattern.behavior.command;
 
 
-//命令模式：三种类：命令类、命令调用类、
+/** 命令模式：
+ * Command: 命令，在 HTTP 中就相当于 请求体
+ * Receiver：命令接收者，在 HTTP 中就相当于 Server
+ * Sender：命令发送者，在 HTTP 中相当于 Browser 或者 PostMan
+ * */
 public class Test {
 
 	public static void main(String[] args) {
