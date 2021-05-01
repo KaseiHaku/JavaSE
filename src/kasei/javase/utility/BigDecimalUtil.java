@@ -76,10 +76,10 @@ public class BigDecimalUtil {
         return a.divide(b, 2, RoundingMode.HALF_UP);
     }
 
-
+    /** BigDecimal 转 String 必须用 toPlainString() 方法 */
     public static void main(String[] args) {
-
-        System.out.println(formatFloatNumber7(-3.45));
+        String decimal = formatFloatNumber7(-3.45).toPlainString();
+        System.out.println(decimal);
     }
 
 }
