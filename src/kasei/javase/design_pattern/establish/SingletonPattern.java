@@ -1,5 +1,8 @@
 
-
+/**
+ * 单例模式：
+ *      单例模式中的单例是指，当前类单例，而不是其他类
+ * */
 public class SingletonPattern {
 
     /** todo 饿汉式 */
