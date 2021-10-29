@@ -40,7 +40,7 @@ volatile 关键字的作用是什么？
 
 wait 和 sleep 的区别？
     1. 来自不同的类，wait => Object;  sleep => Thread
-    2. sleep 不释放锁，wait 不释放锁
+    2. sleep 不释放锁，wait 释放锁
     3. 使用范围的不同：sleep 可以在任何地方使用，wait 必须在同步代码块中使用
     4. 异常捕获问题：wait 不需要捕获异常，sleep 必须捕获异常
 
