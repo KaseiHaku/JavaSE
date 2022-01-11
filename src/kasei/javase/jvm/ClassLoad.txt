@@ -32,8 +32,8 @@ Java 类加载全过程：
 
 Java 类加载器的层次结构：
     BootstrapClassLoader(启动类加载器，C++ 代码实现，java 中显示为 null)
-        └─ sun.misc.Launcher$ExtClassLoader(扩展类加载器)
-            └─ sun.misc.Launcher$AppClassLoader(应用程序类加载器)
+        └─ sun.misc.Launcher$ExtClassLoader(扩展类加载器)                 # JDK 9 模块化以后更换为，PlatformClassLoader(平台类加载器)
+            └─ sun.misc.Launcher$AppClassLoader(应用程序类加载器，系统类加载器)
                 └─ UserClassLoader(用户自定义类加载器)
 
 各个类加载器的区别？
@@ -44,11 +44,12 @@ Java 类加载器的层次结构：
         4. 加载扩展类和应用程序类加载器，并制定他们的父类加载器
         5. 由 Bootstrap 类加载器加载的类 Class.getClassLoader() 方法返回 null
 
-    sun.misc.Launcher$ExtClassLoader: 扩展类加载器
+    sun.misc.Launcher$ExtClassLoader: 扩展类加载器            
+        # JDK 9 模块化以后更换为，PlatformClassLoader(平台类加载器)
         1. 加载 JAVA_HOME/jre/ext/*.jar 或 java.ext.dirs 路径下的内容
         2. 该类加载器类全路径：
 
-    sun.misc.Launcher$AppClassLoader: 应用程序类加载器
+    sun.misc.Launcher$AppClassLoader: 应用程序类加载器，系统类加载器
         1. 加载 java 应用的类路径（classpath，java.class.path 路径下的类），
         2. 一般来说，java应用的类都是由它加载的
 
