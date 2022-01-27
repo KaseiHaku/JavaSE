@@ -29,6 +29,19 @@
  *          requires 所有命名模块
  *          允许访问所有 未命名模块 的类
  *          多个 自动模块 不能导出同一个包，但是 未命名模块 可以
+ * 
+ * 模块下改造过程:
+ *  自底向上改造:
+ *      使用 jdeps 分析，从没有依赖的开始 jar 包开始，改造过的放在 -p 下，没改造的放在 -classpath 下，
+ *      期间以传统的方式启动，改造完成后使用 -m 启动
+ *
+ *  自顶向下改造:
+ *      对于无法改造的 jar 包，放在 -p 路径下，转为自动模块，使其可以访问其他 为命名模块
+ *
+ *
+ *
+ *
+ *
  *
  * Modular execute main:
  *  # 完全没有模块化时，项目的启动命令
@@ -42,7 +55,7 @@
  *  #   --add-modules 是手动添加额外的 root module，否则会报 ClassNotFoundException
  *  shell> java -cp mod1.jar:mod2.jar -p mod3.jar:mod4.jar --add-modules mod3,mod4 xxx.yyy.MainClass
  *
- *  # 所有都模块化后，项目的启动命令
+ *  # 所有都模块化后，或者只剩无法模块化(三方)的 jar 时，项目的启动命令，三方 jar 转为 自动模块
  *  shell> java -p mod1.jar:mod2.jar:mod3.jar:mod4.jar -m mod1/xxx.yyy.MainClass
  *
  * */
