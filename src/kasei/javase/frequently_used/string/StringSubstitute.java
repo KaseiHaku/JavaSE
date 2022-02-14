@@ -1,5 +1,12 @@
 public class StringSubstitute {
 
+    /**
+     * 特殊字符:
+     *      ''          == '
+     *      '{'         == {
+     *      '}'         == }
+     *      '{''}'      == {'}  即: '' 的处理优先级比 '{' 高
+     * */
     public void messageFormat(){
         
         /**
