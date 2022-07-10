@@ -32,6 +32,10 @@ class GenericMethod {
     public static <T extends Object, E> T method(T param){
         return null;
     }
+    public static <T> T method2(String str){
+        Object obj = null;
+        return (T)obj
+    }
 
     /** TODO 泛型方法的调用 */
     public void genericMethodInvoke(){
@@ -40,6 +44,9 @@ class GenericMethod {
 
         GenericMethod instance = new GenericMethod();
         instance.<String, Integer>method(""); // 通过实例调用泛型方法， instance.<>
+        
+        Map map = instance.method2(""); // 调用返回值是 泛型 的方法，强制转换在 方法内部已经做了，在调用时不用写
+        
     }
 
 
