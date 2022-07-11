@@ -145,3 +145,21 @@ Reference:
         一个 instance 只具有虚引用，那么它就和没有任何引用一样，在任何时候都可能被垃圾回收器回收，
         和 软引用/弱引用的区别是，虚引用必须和 ReferenceQueue 一起使用，
         虚引用指向的对象被回收，虚引用本身被放入 ReferenceQueue 中
+
+Annotation Processor: 注解处理器: 在 编译阶段执行指定的 java 代码，可以动态生成 java 代码
+    注解处理器的执行顺序:
+        第一种: xxx.jar!/META-INF/services/javax.annotation.processing.Processor  文件中定义的顺序
+        第二种: javac 命令行参数中指定的顺序
+               shell> javac -processor class1,class2,...       # 指定 使用哪些 注解处理器
+                            -processorpath path                # 指定 注解处理器 扫描的路径
+         
+    
+    注解处理器执行步骤:
+        Round       Input                   Output
+        1           origin source           round1Out
+        2           round1Out               None
+        3           None                    None            # 当 Input 为 None 时结束
+    
+
+    
+
