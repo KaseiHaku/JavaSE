@@ -55,6 +55,11 @@ GC 种类：
     G1                  并发                  both       标记-整理+复制算法  响应速度优先      面向服务端应用，将来替换CMS
 
 
+JDK 各版本 GC ：
+    jdk8    PS Scavenge(young)  PS MarkSweep(old)
+    jdk9    G1(young & old)
+
+
 Java 的引用类型有哪些？
     StrongReference 强引用：不会被回收 GC 回收，当内存空间不足，抛出 OutOfMemoryError 错误
     SoftReference 软引用：内存空间足够时，不会被 GC 回收
