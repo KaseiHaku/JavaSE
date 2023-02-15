@@ -11,7 +11,7 @@ import java.util.List;
  *
  * 什么是声明 or 定义？
  *  1. 变量声明：List<> list;   
- *  2. 方法生命：public void func(List<?> list){};  
+ *  2. 方法声明：public void func(List<?> list){};  
  *  3. 类的声明：public class Aa<?>{}
  *
  *
