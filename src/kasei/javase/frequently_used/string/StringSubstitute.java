@@ -11,6 +11,7 @@ public class StringSubstitute {
         
         /**
          * number 类型的 SubformatPattern
+         * @doc https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html
          *      0               数字，没有以 0 补位
          *      #               数字，0 不显示
          *      .               小数点
