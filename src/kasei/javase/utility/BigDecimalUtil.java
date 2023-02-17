@@ -3,55 +3,62 @@ package kasei.utility;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/** Java 小数工具 */
+/** Java 小数工具 
+    Double -> BigDecimal:
+        new BigDecimal(d.toString());
+        new BigDecimal(Double.toString(d));
+        BigDecimal.valueOf(d);
+    Integer -> BigDecimal:
+        new BigDecimal(Integer.toString(d));
+*/
 public class BigDecimalUtil {
 
     /** 不做任何处理，直接保留两位小数 */
     public static Double formatFloatNumber(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.DOWN);
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.DOWN);
         return bigDecimal.doubleValue();
     }
 
     /** 保留两位小数，只要第 3 位不是 0 就进位，正数向正无穷进位，负数向负无穷进位，即 1.721=1.73; -1.721 = -1.73 */
     public static Double formatFloatNumber2(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.UP);
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.UP);
         return bigDecimal.doubleValue();
     }
 
     /** 保留两位小数，只要第 3 位不是 0 就进位，全部向正无穷进位，即 1.728=1.73; -1.728 = -1.72  */
     public static Double formatFloatNumber3(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.CEILING);// 天花板
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.CEILING);// 天花板
         return bigDecimal.doubleValue();
     }
 
     /** 保留两位小数，只要第 3 位不是 0 就进位，全部往负无穷方向进位，即 1.728=1.72; -1.721=-1.73 */
     public static Double formatFloatNumber4(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.FLOOR);// 地板
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.FLOOR);// 地板
         return bigDecimal.doubleValue();
     }
 
     /** 四舍五入 */
     public static Double formatFloatNumber5(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.HALF_UP);
         return bigDecimal.doubleValue();
     }
 
     /** 五舍六入 */
     public static Double formatFloatNumber6(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(2, RoundingMode.HALF_DOWN);
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(2, RoundingMode.HALF_DOWN);
         return bigDecimal.doubleValue();
     }
 
     /** 保留两位小数，先四舍五入，如果第 3 位 =5 ，那么看前一位，偶舍奇入，只对整数有效，也就是保留 0 位小数有效 */
     public static Double formatFloatNumber7(Double d){
 
-        BigDecimal bigDecimal = new BigDecimal(d).setScale(1, RoundingMode.HALF_EVEN);
+        BigDecimal bigDecimal = BigDecimal.valueOf(d).setScale(1, RoundingMode.HALF_EVEN);
         return bigDecimal.doubleValue();
     }
 
