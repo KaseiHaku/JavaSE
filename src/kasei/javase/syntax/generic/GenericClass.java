@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 泛型基础知识：
- *  1. 泛型实参: ?, Integer, Number, String; 所以泛型实参是一个具体的泛型类型，其中 ? 相当于 Object
+ *  1. 泛型实参: Object, Integer, Number, String; 所以泛型实参是一个具体的泛型类型，
  *  2. 泛型形参: T, E, K, V
  *  3. 泛型通配符: <? extends Number>, <? super Shape>, <?>;  泛型通配符只能用于声明(Java 中声明和定义都是同时进行的)，实际使用时不能使用
  *
@@ -50,7 +50,11 @@ class GenericMethod {
     }
 
 
-    /** TODO 虽然 Integer 是 Number 的子类，但是 List<Integer> 不是 List<Number> 的子类，两者是完全不同的类 */
+    /** 
+     * TODO
+     *  根据 java 规范: 泛型是不可变原则，
+     *  虽然 Integer 是 Number 的子类，但是 List<Integer> 不是 List<Number> 的子类，两者是完全不同的类，没有任何关系
+     * */
     public void method1(List<Number> list) { }
     public void method1Test(){
         List<Integer> list = Arrays.asList(1, 2, 3);
