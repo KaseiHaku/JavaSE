@@ -23,7 +23,9 @@
         作用:
             伪装一个非本继承体系中的类到当前继承体系统中
     Bridge: 桥接模式，即：把一个 对象 中可以相互独立变化的维度，抽象成一个接口
-        把公用方法提取成为一个 interface ，公用方法由各自的实现类实现
+        ClassA 和 ClassB 都有一个同名的 method xxx()，把同名的 method 提取到一个 interface M 中，
+        ClassA#xxx() 的逻辑写到 M 的实现类 M1#xxx() 中，ClassA 组合一个 M1 的实例，将 ClassA#xxx() 的调用委托给 M1 实例执行
+        ClassB 同理
     Decorate: 装饰器模式：
         装饰器类 Decorate 包含被装饰类 A 的实例，在 A 的方法外围添加自己的代码
     Proxy: 代理模式
