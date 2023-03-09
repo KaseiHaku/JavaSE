@@ -7,19 +7,21 @@ import java.util.List;
  * 泛型基础知识：
  *  1. 泛型实参: Object, Integer, Number, String; 所以泛型实参是一个具体的泛型类型，
  *  2. 泛型形参: T, E, K, V
- *  3. 泛型通配符: <? extends Number>, <? super Shape>, <?>;  泛型通配符只能用于声明(Java 中声明和定义都是同时进行的)，实际使用时不能使用
+ *  3. 泛型通配符: <? extends Number>, <? super Shape>, <?>;  泛型通配符只能用于声明，不能用于定义(实际使用)
  *
- * 什么是声明 or 定义？
- *  1. 变量声明：List<> list;   
- *  2. 方法声明：public void func(List<?> list){};  
+ * 什么是声明？
+ *  1. 变量声明：List<?> list;   
+ *  2. 方法声明：
+ *      public void func(List<?> list){};   // 方法参数类型声明
+ *      public List<?> func(Integer i){};   // 方法返回值类型声明
  *  3. 类的声明：public class Aa<?>{}
  *
  *
  *
- * 什么是实际使用?
- *  1. 变量的使用：List<?> list = new ArrayList<String>();   // 其中 等号后面的是定义
- *  2. 方法的使用：func(listVar);  // 方法调用
- *  3. 类的使用：new Aa(); // 使用类创建对象
+ * 什么是定义 or 实际使用?
+ *  1. 变量的创建：new ArrayList<String>();       // 其中 等号后面的是定义
+ *  2. 方法的调用：obj.<String>func(listVar);     // 方法调用
+ *  3. 类的创建：new Aa<String>();               // 使用类创建对象
  */
 public class GenericClass<T, U>{
     
