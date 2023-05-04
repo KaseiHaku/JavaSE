@@ -6,6 +6,8 @@ Trap: List Array Exchange
     array to list
         List<String> list = new ArrayList<String>(array.length);
         Collections.addAll(list, array);
+        
+        new ArrayList<>(Arrays.asList(s, s1))   // 将 ary 转成 list
 
 Trap: List 调用 remove() 方法时，for(;;) 报 IndexOutOfBoundsException、for(:) 报 ConcurrentModificationException
     解决方案：使用 Iterator 遍历，他会自动维护索引
