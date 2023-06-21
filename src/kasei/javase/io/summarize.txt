@@ -12,12 +12,12 @@ Buffer 相关:
         mark: 调用 reset 方法时，重置 position 到 mark 处，当设置 position 或 limit 小于 mark 时，mark 自动删除
         大小关系:   0 <= mark <= position <= limit <= capacity
     Method:
-        reset: 重置 position 到 mark 处，mark 不存在则报错
+        reset:             重置 position 到 mark 处，mark 不存在则报错
         clear:             position = 0; limit = capacity; 
         flip:              limit = position; position = 0;
         rewind:            position = 0;
         slice:             从原 buffer 中创建一个新的子 Buffer 对象，保持原 Buffer position 和 limit 不变，但是和原 buffer 共享数据
         duplicate:         浅拷贝出一个新的 buffer，保持原 buffer 不变
     Read&Write:
-        get()
-        put()
+        get()            读取当前 position 所在的元素，position++;    
+        put()            写入到当前 position 所在的元素，position++;
