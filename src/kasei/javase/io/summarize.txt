@@ -1,4 +1,23 @@
 经典比喻：烧开水，假设有一排水壶在烧开水。
-bio: 叫一个线程一直盯着一个水壶，直到一个水壶烧开了，再去盯另一个水壶
-nio: 叫一个线程循环不停的查看每一个水壶，根据每一个水壶的状态去处理。轮询
-aio: 给每一个水壶安装一个烧开后响的装置，水开了之后会提醒对应的线程去处理。回调
+    bio: 叫一个线程一直盯着一个水壶，直到一个水壶烧开了，再去盯另一个水壶
+    nio: 叫一个线程循环不停的查看每一个水壶，根据每一个水壶的状态去处理。轮询
+    aio: 给每一个水壶安装一个烧开后响的装置，水开了之后会提醒对应的线程去处理。回调
+
+
+Buffer 相关:
+    Concept:
+        capacity: 当前 Buffer 的容量，即: 大小，具体字节数根据 Buffer 元素的类型决定，确定后无法修改
+        limit: 第一个 不可读 或 不可写 元素的 idx
+        position: 下一个 可读 或 可写 元素的 idx
+        mark: 调用 reset 方法时，重置 position 到 mark 处，当设置 position 或 limit 小于 mark 时，mark 自动删除
+        大小关系:   0 <= mark <= position <= limit <= capacity
+    Method:
+        reset: 重置 position 到 mark 处，mark 不存在则报错
+        clear:             position = 0; limit = capacity; 
+        flip:              limit = position; position = 0;
+        rewind:            position = 0;
+        slice:             从原 buffer 中创建一个新的子 Buffer 对象，保持原 Buffer position 和 limit 不变，但是和原 buffer 共享数据
+        duplicate:         浅拷贝出一个新的 buffer，保持原 buffer 不变
+    Read&Write:
+        get()
+        put()
