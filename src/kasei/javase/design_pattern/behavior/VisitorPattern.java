@@ -4,7 +4,7 @@ public class VisitorPattern {
 
     /** todo Host 用于表示一个类是 被访问的，即房东 */
     private static interface Host {
-        public void accept(Visitor visitor);
+        public void accept(Visitor visitor); // 该方法 实现类 决定到底调用 Visitor 中的哪个方法
     }
 
 
@@ -20,7 +20,7 @@ public class VisitorPattern {
         String price = "1234";
         @Override
         public void accept(Visitor visitor) {
-            visitor.visit(this);
+            visitor.visit2(this);
         }
     }
 
@@ -28,7 +28,7 @@ public class VisitorPattern {
     /** todo Visitor 用于表示一个类是 访客 */
     private static interface Visitor {
         default public void visit(MyHouse host){}
-        default public void visit(MyCar car){}
+        default public void visit2(MyCar car){}
     }
 
 
@@ -39,7 +39,7 @@ public class VisitorPattern {
             System.out.println(myHouse.color);
         }
         @Override
-        public void visit(MyCar myCar) {
+        public void visit2(MyCar myCar) {
             System.out.println(myCar.price);
         }
     }
