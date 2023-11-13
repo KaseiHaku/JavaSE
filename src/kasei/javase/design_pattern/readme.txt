@@ -55,7 +55,7 @@
     Iterator: 迭代器模式
     
     Command: 命令模式
-    
+        每个命令子类，包含该命令所需的参数，并存在一个 execute() 方法，
     Memento: 备忘录模式
         提取当前实例的状态，保存到外部，比如 JSON ，在适当的时候可以恢复实例某一时刻的状态 
     State: 状态模式
@@ -65,8 +65,9 @@
         Visitor 中有多个方法 visit(Master), Master 中有一个 acceptVisit(Visitor ) 方法，用于接受 vistor 的调用
     Mediator: 中介者模式
         多个实例相互调用，形成网状结构，采用改模式，能使拓扑图变为星型，相当于交换机的角色
+        所有其他 Class 都持有一个相同 Mediator 实例，其他所有 Class 的方法，都调用 Mediator 进行操作
     Interpreter: 解释器模式
-        多用于编译器，搞不懂
+        多用于编译器，搞不懂， （终结符，非终结符）; (词法分析 -> 语法分析 -> 代码生成 -> 连接)
 并发型模式:
 
 
