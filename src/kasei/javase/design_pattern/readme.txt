@@ -62,6 +62,7 @@
         提取状态到独立的接口，状态实现可以修改状态拥有者的属性，这是跟 Strategy 模式最主要的区别
     Visitor: 访问者模式
         比如电脑是访问者本身，那么外设就是被访问的实例，外设提供统一的接口给电脑（USB）访问
+        Visitor 中有多个方法 visit(Master), Master 中有一个 acceptVisit(Visitor ) 方法，用于接受 vistor 的调用
     Mediator: 中介者模式
         多个实例相互调用，形成网状结构，采用改模式，能使拓扑图变为星型，相当于交换机的角色
     Interpreter: 解释器模式
