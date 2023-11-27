@@ -8,6 +8,8 @@ Java 中对象全等性判断：
     2. 对象的 hashCode() 方法一致
     3. 特别注意包装类的使用，
         比如 int i=1; Integer j=1; list.remove();的时候，传入 i 和 j 的效果不同，因为 j 是对象，会用对象的方式进行全等判断
+    4. 查看 obj 对象在内存中的地址
+        System.identityHashCode(obj);  // 可以用与替代 == 
 
 Java 中获取系统参数
     System.getProperties(); 方法上方包含所有属性 key
