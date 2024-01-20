@@ -53,9 +53,17 @@ class GenericMethod {
 
 
     /** 
-     * TODO
-     *  根据 java 规范: 泛型是不可变原则，
-     *  虽然 Integer 是 Number 的子类，但是 List<Integer> 不是 List<Number> 的子类，两者是完全不同的类，没有任何关系
+     * @trap Java 泛型不支持 协变性
+     *       例如: 虽然 Integer 是 Number 的子类，但是 List<Integer> 不是 List<Number> 的子类，两者是完全不同的类，没有任何关系
+     *       因为如果支持 协变性，那么可能出现如下代码:
+     *           List<Map<String, Object>> mapList = new ArrayList<>();
+     *           List<Object> objList = mapList;               // 如果支持 协变性，那么这里 编译器 就不会报错 
+     *           objList.add(new ArrayList<>());               // 添加一个不是 Map 的对象
+     *           Map<String, Object> map = mapList.get(0);     // 这里会出现类型不匹配的问题，如果 泛型支持协变，那么就和 引入泛型的初衷(强类型) 冲突，所以 泛型不可能支持 协变性
+     *
+     *       如果你需要将 List<Map> 赋值给 List<Object>，可以考虑使用通配符 ?，即 List<?>
+     *           List<Map<String, Object>> mapList = new ArrayList<>();
+     *           List<?> objList = mapList;        // 这样赋值 编译器 才不报错
      * */
     public void method1(List<Number> list) { }
     public void method1Test(){
