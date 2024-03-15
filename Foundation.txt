@@ -88,6 +88,8 @@ Java 内部类：静态内部类、普通内部类、局部内部类、匿名内
     访问权限：外部类访问内部类，不受访问修饰符控制，都可访问；其他类访问内部类，先看内部类本身的修饰符，然后在看内部类里面的方法和字段的修饰符
     
 JavaBean 规范：
+    @doc https://www.oracle.com/java/technologies/javase/desktop-overview.html          Java Desktop 开发文档
+    @doc https://www.oracle.com/java/technologies/javase/javabeans-spec.html            JavaBean 规范文档下载页面
     1. 必须是个公共类： public class MyJavaBean{}
     2. 必须有一个公用的空的构造函数： public MyJavaBean(){}
     3. 所有实例变量都必须是私有的： private String str;
