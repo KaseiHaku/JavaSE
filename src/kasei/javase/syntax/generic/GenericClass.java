@@ -7,7 +7,9 @@ import java.util.List;
  * 泛型基础知识：
  *  1. 泛型实参: Object, Integer, Number, String; 所以泛型实参是一个具体的泛型类型，
  *  2. 泛型形参: T, E, K, V
- *  3. 泛型通配符: <? extends Number>, <? super Shape>, <?>;  泛型通配符只能用于声明，不能用于定义(实际使用)
+ *  3. 泛型通配符: <? extends clsOrIntf & intf1 & intf2>, <? extends Number>, <? super Shape>, <?>;  
+ *               泛型通配符只能用于声明，不能用于定义(实际使用)
+ *               当存在 多个限定(bound) 时，最多只能有一个类，且该类必须是限定列表的第一个，其他必须是接口
  *
  * 什么是声明？
  *  1. 变量声明：List<?> list;   
