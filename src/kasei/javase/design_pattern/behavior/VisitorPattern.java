@@ -4,7 +4,8 @@ public class VisitorPattern {
 
     /** todo Host 用于表示一个类是 被访问的，即房东 */
     private static interface Host {
-        public void accept(Visitor visitor); // 该方法 实现类 决定到底调用 Visitor 中的哪个方法
+        // 该方法 实现类 决定到底调用 Visitor 中的哪个方法，或者 在 Visitor 中使用 方法重载，通过参数类型让 compiler 自行判断
+        public void accept(Visitor visitor); 
     }
 
 
