@@ -3,6 +3,13 @@
     nio: 叫一个线程循环不停的查看每一个水壶，根据每一个水壶的状态去处理。轮询
     aio: 给每一个水壶安装一个烧开后响的装置，水开了之后会提醒对应的线程去处理。回调
 
+各 I/O 区别:
+    bio:
+        使用 InputStream/OutputStream 来进行 I/O 操作
+    nio:
+        使用 channel 和 buffer 来进行 I/O 操作。
+    aio:
+        使用 Future 和 CompletionHandler 来进行 I/O 操作。
 
 Buffer 相关:
     Concept:
