@@ -25,6 +25,7 @@ Buffer 相关:
         rewind:            position = 0;
     Other Method:
         hasRemaining:      position 和 limit 之间是否还有数据
+        remaining:         返回 position 和 limit 之间的数据的 长度
         slice:             从原 buffer 中创建一个新的子 Buffer 对象，保持原 Buffer position 和 limit 不变，但是和原 buffer 共享数据
         duplicate:         浅拷贝（和原 buffer 共享数据）出一个新的 buffer，保持原 buffer 不变
     Read&Write:
