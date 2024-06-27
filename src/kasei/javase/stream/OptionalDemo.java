@@ -35,6 +35,13 @@ public class OptionalDemo {
 
         Optional<StringBuilder> optSb3 = optSbNullable.flatMap(x -> Optional.of(new StringBuilder("flatMap 方法返回值是 Optional 类型，内部必须封装好")));
 
+
+        // 连续获取属性
+        Optional<String> prop3Value = Optional.ofNullable(obj)
+                .map(Obj::getProp1)
+                .map(Prop1::getProp2)
+                .map(Prop2::getProp3);
+
     }
 
 
