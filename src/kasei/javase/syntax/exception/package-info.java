@@ -33,4 +33,10 @@ Java 异常设计原则：
             2. 能够为用户提供明确的信息，包括引导他们从错误中恢复过来，比如：给用户提示哪里出错
 */
 
+/**
+ * 常见异常: 
+ *    java.lang.ClassNotFoundException        # 编译时，classpath 中找到不到类
+ *    java.lang.NoClassDefFoundError          # 运行时，classpath 中找不到类
+ * */
+
 
