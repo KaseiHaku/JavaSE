@@ -27,17 +27,6 @@ import java.util.List;
  *  2. 方法的调用：obj.<String>func(listVar);     // 方法调用
  *  3. 类的创建：new Aa<String>();               // 使用类创建对象
  *
- * 使用指导方针:
- *    方法参数类型：
- *        in  类型的方法参数: 向方法体中的代码提供数据的 入参
- *        out 类型的方法参数：保存方法体中代码的处理结果，并需要在其他地方使用的入参
- *    泛型通配符使用原则：
- *        在函数参数中，in 类型的参数，应该使用 extends 来表示
- *        在函数参数中，out 类型的参数，应该使用  super 来表示
- *        在 in 类型的参数中，只能访问 Object 类的方法时，应该使用 无界通配符(即: ?)
- *        在参数同时作为 in 和 out 时，则不应该使用 泛型通配符
- *        以上原则不适用于 方法返回值，方法返回值应该避免使用 泛型通配符，因为这会强制 程序员 使用代码来处理 通配符
- *
  *
  */
 public class GenericClass<T, U>{
@@ -96,6 +85,31 @@ class GenericMethod {
         method3(list);  // 这里不报错, 因为 List<Integer> 是 List<? extends Object> 的子类
     }
 
+
+
+    /** 
+     * 泛型通配符 存取解释 及 指导方针
+     *    PECS（Producer Extends, Consumer Super）原则：   
+     *        method body 对 通配符入参 只读不写，用 <? extends Xxx>
+     *        method body 对 通配符入参 需要写入，用 <? super Xxx>
+     *    方法参数类型：
+     *        in  类型的方法参数: 向方法体中的代码提供数据的 入参
+     *        out 类型的方法参数：保存方法体中代码的处理结果，并需要在其他地方使用的入参
+     *    泛型通配符使用原则：
+     *        在函数参数中，in 类型的参数，应该使用 extends 来表示
+     *        在函数参数中，out 类型的参数，应该使用 super 来表示
+     *        在 in 类型的参数中，只能访问 Object 类的方法时，应该使用 无界通配符(即: ?)
+     *        在参数同时作为 in 和 out 时，则不应该使用 泛型通配符
+     *        以上原则不适用于 方法返回值，方法返回值应该避免使用 泛型通配符，因为这会强制 程序员 使用代码来处理 通配符
+     * */
+    public void superWildcard(List<? super Number> data){
+        Object object = data.get(1); // 只能用 Object 接住变量，因为不知道是 List<Number> 还是 List<Object>，所以统一向上转型为 Object
+        data.add(new Integer(2));    // 可以添加 Number 的子类，因为不管 data 是 List<Number> 还是 List<Object>，add 一个 Integer 都没问题
+    }
+    public void extendsWildcard(List<? extends Number> data){
+        Number object = data.get(1); // 只能用 Number 接住变量，因为不知道你传进去的到底是 List<Number> 还是 List<Integer>，所以统一向上转型为 Number
+        data.add(new Integer(2)); // 错误，无法通过编译，因为不知道 data 到底是 List<Integer> 还是 List<Double>，如果是 List<Double>, 那么 add 就会出错，所以不能 add 元素
+    }
 
 }
 
