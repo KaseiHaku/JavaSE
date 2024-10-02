@@ -20,7 +20,7 @@ import java.util.List;
  *
  *
  *
- * 什么是定义 or 实际使用?
+ * 什么是定义 or 实际使用? 以下为实际使用
  *  1. 变量的创建：new ArrayList<String>();       // 其中 等号后面的是定义
  *  2. 方法的调用：obj.<String>func(listVar);     // 方法调用
  *  3. 类的创建：new Aa<String>();               // 使用类创建对象
