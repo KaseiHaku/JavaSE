@@ -111,5 +111,15 @@ class GenericMethod {
         data.add(new Integer(2)); // 错误，无法通过编译，因为不知道 data 到底是 List<Integer> 还是 List<Double>，如果是 List<Double>, 那么 add 就会出错，所以不能 add 元素
     }
 
+    /** 泛型嵌套问题 */
+    public Mono<RespDto<?>> nestedWildcard1(){
+        Mono<RespDto<String>> obj = null;
+        return obj; // 报错，无法通过编译，因为泛型不支持嵌套; 所以这里只会判断 RespDto<?> 和 RespDto<String> 是否相同，结果是不同，所以就报错了
+    }
+    public Mono<? extends RespDto<?>> nestedWildcard1(){
+        Mono<RespDto<String>> obj = null;
+        return obj; // 这里不报错，因为 <RespDto<String>> 是 <? extends RespDto<?>> 的子类
+    }
+
 }
 
