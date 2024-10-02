@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * @doc {官方文档} https://docs.oracle.com/javase/tutorial/java/generics/index.html
+ * 
  * 泛型基础知识：
  *  1. 泛型实参: Object, Integer, Number, String; 所以泛型实参是一个具体的泛型类型，
  *  2. 泛型形参: T, E, K, V
@@ -24,6 +26,19 @@ import java.util.List;
  *  1. 变量的创建：new ArrayList<String>();       // 其中 等号后面的是定义
  *  2. 方法的调用：obj.<String>func(listVar);     // 方法调用
  *  3. 类的创建：new Aa<String>();               // 使用类创建对象
+ *
+ * 使用指导方针:
+ *    方法参数类型：
+ *        in  类型的方法参数: 向方法体中的代码提供数据的 入参
+ *        out 类型的方法参数：保存方法体中代码的处理结果，并需要在其他地方使用的入参
+ *    泛型通配符使用原则：
+ *        在函数参数中，in 类型的参数，应该使用 extends 来表示
+ *        在函数参数中，out 类型的参数，应该使用  super 来表示
+ *        在 in 类型的参数中，只能访问 Object 类的方法时，应该使用 无界通配符(即: ?)
+ *        在参数同时作为 in 和 out 时，则不应该使用 泛型通配符
+ *        以上原则不适用于 方法返回值，方法返回值应该避免使用 泛型通配符，因为这会强制 程序员 使用代码来处理 通配符
+ *
+ *
  */
 public class GenericClass<T, U>{
     
