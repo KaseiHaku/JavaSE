@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
  *  1. Reactor 每次执行一个 Operator 都独立生成一个 Mono(Flux) 对象，该对像中保存着对原始 Mono(Flux) 对象的处理逻辑
  *  2. 基于其他 Mono1 创建出来的 Mono2,再基于 Mono2 创建出 Mono3，
  *     那么在 Mono3.subscribe(subscriber) 方法内部会调用 Mono2.subscribe(subscriber)，
- *     Mono2.subscribe(subscriber) 方法内部会调用 Mono1.subscribe(subscriber)，如果有更多，以此类推。
+ *     Mono2.subscribe(subscriber) 方法内部会调用 Mono3.subscribe(subscriber)，如果有更多，以此类推。
  *     如果需要在执行过程中做修改，那么创建一个代理 subscriber 实例，用来代理原来的 subscribe，并将代理 subscriber 继续向上传递，
  *     在新的 subscriberProxy 中可以修改 onNext onComplete 等方法实现自定义逻辑，
  *     也可以在 Mono3.subscribe(subscriber) 方法中的 Mono2.subscribe(subscriber) 代码前后添加额外的逻辑
