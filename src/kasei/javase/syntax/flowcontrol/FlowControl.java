@@ -2,9 +2,11 @@ package kasei.javase.se.syntax.flowcontrol;
 
 public class FlowControl {
 
-
+    /**
+     * Ternary/Conditional Operator: 三元操作符
+     * */
     public static void _condition(){
-       String str =  1>2?"r":"b";
+       String str =  1>2 ? "r" : "b";
     }
 
     public static void _ifElse(){
@@ -31,8 +33,7 @@ public class FlowControl {
         do {
             System.out.println("do-while~"+ i);
             i++;
-        }
-        while(i< 0);
+        } while(i< 0);
     }
 
     public static void _for(){
@@ -52,6 +53,13 @@ public class FlowControl {
                 continue OUTER;//结束标号标记的那层循环的本次循环
             }
         }
+
+
+        // enhanced for/for each loop: 增强型 for 循环
+        for(Integer item : SubClsOfIterable) { // java.lang.Iterable
+            System.out.println(item);
+        }
+        
         System.out.println("end");
     }
 
@@ -76,6 +84,24 @@ public class FlowControl {
                 break;
         }
 
+
+        String str2 = switch(intVarName) {
+            case 0: {
+                System.out.println("a");
+                yield "a";
+            } 
+            default: {
+                yield "b";
+            }
+        };
+
+        String str3 = switch(intVarName) {
+            case 0 -> "a";
+            default: -> "b";
+        };
+        
+
+        
 
         //JDK7的新特性：表达式结果可以为字符串 String！！！
         String str = "地方";
@@ -110,5 +136,15 @@ public class FlowControl {
         System.out.println("normal");
         return "正常结束";
     }
+
+    public static void _try_with_resources(){
+        try(SubClsOfAutoCloseable varName = expression){ // java.lang.AutoCloseable
+            
+        } catch (Exception e){
+            
+        } finally {
+        }
+    }
+    
 
 }
