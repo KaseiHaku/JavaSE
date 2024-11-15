@@ -105,7 +105,15 @@ public class FlowControl {
             case 0 -> "a";
             default: -> "b";
         };
-        
+
+
+        // swith pattern match 
+        switch (obj) {
+            case String s  -> log.info(s);
+            case Double d  -> log.info(d.toString());
+            case Integer i -> log.info(i.toString());
+            default        -> log.info("");
+        }
 
         
 
