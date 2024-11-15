@@ -18,6 +18,12 @@ public class FlowControl {
         } else {
             System.out.println("3");
         }
+
+        // cast if
+        if(varname instanceof Integer i){
+            i++;
+        }
+        
     }
 
     public static void _while(){
